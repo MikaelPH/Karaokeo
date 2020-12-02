@@ -69,3 +69,22 @@
   border-color: lightgrey;
 }
 /*End Filter*/
+
+/*Top Nav*/
+.navbar {
+  width: 100%;
+}
+.nav-logo{
+  width: 150px;
+}
+.nav-link {
+  background-color: gray;
+  border-radius: 5px;
+  margin-left: 1em;
+  
+}
+a.menu-icon img {
+  height: 30px;
+  margin-left: 1em;
+}
+/*End Top Nav*/
