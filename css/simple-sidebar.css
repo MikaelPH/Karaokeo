@@ -10,12 +10,13 @@
 
 #sidebar-wrapper {
   min-height: 100vh;
-  margin-left: -14.7rem;
+  margin-left: -22em;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
-  max-width: 300px;
+  max-width: 350px;
+  min-width: 350px;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -30,24 +31,12 @@
 #page-content-wrapper {
   min-width: 100vw;
 }
+/*.fixed {
+  position: fixed;
+}*/
 
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
-}
-
-@media (min-width: 768px) {
-  #sidebar-wrapper {
-    margin-left: 0;
-  }
-
-  #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
-  }
-
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
-  }
 }
 
 .bg-light {
@@ -58,11 +47,13 @@
 /*Filter*/
 #sidebar-wrapper ul {
   list-style-type: none;
-  margin-left: -20px;
+  margin-left: -30px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 #sidebar-wrapper li {
-  border-bottom: solid;
+  /*border-bottom: solid;*/
   border-width: 1px;
   padding-bottom: 5px;
   padding-top: 10px;
@@ -78,19 +69,87 @@
   width: 150px;
 }
 .nav-link {
-  background-color: gray;
-  border-radius: 5px;
+  border-radius: 1px;
   margin-left: 1em;
   
 }
+.nav-link:hover {
+  color: blue;
+}
+
 a.menu-icon img {
   height: 30px;
   margin-left: 1em;
+  margin-top: 6px;
 }
 /*End Top Nav*/
 
 
-
+/*room cards*/
 .card {
-  width: 300px;
+  max-width: 340px;
+  min-width: 340px;
+  margin-top: 20px;
+}
+/*End Room cards*/
+
+
+.HideBtn {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 2px;
+  border-radius: 50%;
+}
+
+.HideBtnContainer {
+  margin-right: -10px;
+  display: none;
+}
+
+.btnContainer {
+  top: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -22rem;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .HideBtnContainer {
+  display: block;
+  }
+  .card img {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .HideBtnContainer {
+  display: block;
+  }
+  .card {
+    max-width: 320px;
+    min-width: 320px;
+    margin-top: 20px;
+  }
+  .card img {
+    height: 80px;
+  }
 }
