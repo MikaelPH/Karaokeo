@@ -116,6 +116,41 @@ a.menu-icon img {
   margin-top: 10px;
 }
 
+/*Michael- Friends list*/
+.btn-group, .btn-group-vertical {
+  position: fixed; right: 15px; bottom: 15px;
+  display: -ms-inline-flexbox;
+  
+  /* display: inline-flex; */
+  /* vertical-align: middle; */
+  z-index: 1;
+}
+.dropdown-toggle{
+  border-radius: 40px;
+}
+.dropdown-menu{
+  min-width: 12em;
+  padding: 0;
+}
+.btn-friendslist {
+width: 100%;
+background-color: #007bff;
+color: white;
+height: 45px;
+display: -webkit-box;
+
+}
+.btn-friendslist:hover {
+  background-color: tomato;
+}
+.friends-icon{
+  width: 20px;
+}
+.friends-title{
+  text-align: center;
+}
+/*End of Friendslist*/
+
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
