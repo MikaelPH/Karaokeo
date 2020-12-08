@@ -33,3 +33,7 @@ formulär
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+img {
+  max-width: 300px;
+}
