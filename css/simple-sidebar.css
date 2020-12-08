@@ -44,7 +44,14 @@
     background-color: #adb5bd;
 }
 
-
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
 /*Filter*/
 #sidebar-wrapper ul {
   list-style-type: none;
