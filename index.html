@@ -5,195 +5,95 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+ 
+<!-- /Sökoptimering-->
+  <meta name="Karaoke" content="En community för personer som vill sjunga karaoke tillsammans eller själv."/>
 
-  <title>KAROKEO</title>
+  <title>Karaokeo</title>
 
-  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="css/profile.css" rel="stylesheet">
+
+  <link rel="icon" 
+      type="image/png" 
+      href="img/fav.png" />
 
 </head>
 
 <body>
-    <!-- /#sidebar-wrapper -->
-    <div id="page-content-wrapper">
 
-      <!-- Top Menu-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-
-        <img class="nav-logo" src="img/loggo.png" alt="karaokeo logo">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0"><li class="nav-item active">
-            <a class="nav-link" href="#">Button <span class="sr-only">(current)</span></a>
-          </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li>
-              <a class="menu-icon" href="profilsida"><img src="img/profile-icon.png" alt="profile icon"></a>
-            </li>
-            <li>
-              <a class="menu-icon" href="settings"><img src="img/setting.icon.png" alt="settings icon"></a>
-            </li>
-          </ul>
-        </div>
-        <!-- End Menu Options-->
-
-      </nav>
-
-<!-- Side Content Toggle Button -->
-        <button class="btn btn-primary" id="side-toggle">Toggle Sidebar</button>
-<!-- Main content Wrapper -->
   <div class="d-flex" id="wrapper">
 
-    <!-- Side Content -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <ul>
-        <li>
-        <input class="form-control" type="text" placeholder="Search">
-        <button type="submit" class="btn btn-primary mb-2">Search</button>
-      </li>
-    </ul>
-        <!-- Filter -->
-        <h5>Filter options:</h5>
-        <ul>
-          <li>
-            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Option1</label>
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-              <option selected>Choose</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </li>
-          <li>
-            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Option2</label>
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-              <option selected>Choose</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </li>
-          <li>
-            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Option3</label>
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-              <option selected>Choose</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </li>
-          <li>
-            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Option3</label>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">1</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">2</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">3</label>
-            </div>
-          </li>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
 
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-            <button type="button" class="btn btn-primary btn-sm btn-block">Apply Filter</button>
-          </li>
-        </ul>
-        <!-- End Filter -->
-      <div class="list-group list-group-flush">
-
-      </div>
-    </div>
+<img src="img/user.png" alt="user" class="center"> 
 
 
-      <!--Main Content-->
-      <div class="container-fluid">
+<div class="container-fluid">
+   <h1 class="mt-4">Profil</h1>
+  <form action="/action_page.php">
+    <label for="fname">First name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="uname">User name</label>
+    <input type="text" id="lname" name="username" placeholder="Your user name..">
+
+    <label for="country">Country/label>
+    <select id="country" name="country">
+      <option value="sverige">Sverige</option>
+      <option value="danmark">Danmark</option>
+      <option value="finland">Finland</option>
+      <option value="norge">Norge</option>
+    </select>
+
+<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Genre</label> <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+<option selected>
+Any
+</option>
+<option value="1">
+Pop
+</option>
+<option value="2">
+Rock
+</option>
+<option value="3">
+Klassisk
+</option>
+<option value="4">
+Elektronisk
+</option>
+<option value="5">
+Punk
+</option>
+<option value="6">
+Metal
+</option>
+
+</select>
 
 
-
-       <div class="card-deck">
-        <div class="card">
-          <img src="img/placeholder-600x400.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">90s Pop hits</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Participant: 5/10</small>
-            <button type="button" class="btn btn-primary btn-sm btn-block">Join Room</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/placeholder-600x400.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">90s Pop hits</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Participant: 5/10</small>
-            <button type="button" class="btn btn-primary btn-sm btn-block">Join Room</button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/placeholder-600x400.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">90s Pop hits</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Participant: 5/10</small>
-            <button type="button" class="btn btn-primary btn-sm btn-block">Join Room</button>
-          </div>
-        </div>
-      </div>
-
-
-      </div>
-    </div>
+   
+   <a href="/privacy.html"><button class="btn btn-primary btn-lg btn-block" type="button">Spara</button></a>
+  </form>
+</div>
 
   </div>
+  <!-- /#wrapper -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Side Content Toggle Script -->
+  <!-- Menu Toggle Script -->
   <script>
-    $("#side-toggle").click(function(e) {
+    $("#menu-toggle").click(function(e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
