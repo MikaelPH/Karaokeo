@@ -6,10 +6,11 @@
 
  #wrapper {
     overflow-x: hidden;
+    padding-top: 62px;
  }
 
 #sidebar-wrapper {
-  min-height: 100vh;
+  min-height: 90vh;
   margin-left: -22em;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
@@ -59,28 +60,39 @@
   padding-top: 10px;
   border-color: lightgrey;
 }
+p.filter {
+  writing-mode: vertical-rl; 
+  margin-left: -2px;
+  margin-right: -2px;
+  padding-top: 16px;
+}
+
 /*End Filter*/
 
 /*Top Nav*/
 .navbar {
   width: 100%;
 }
+a.nav-link {
+  color: blue;
+}
+
 .nav-logo{
   width: 150px;
 }
 .nav-link {
   border-radius: 1px;
   margin-left: 1em;
-  
 }
-.nav-link:hover {
-  color: blue;
-}
-
 a.menu-icon img {
   height: 30px;
   margin-left: 1em;
   margin-top: 6px;
+}
+
+a.nav-link img {
+  height: 30px;
+  margin-left: 1em;
 }
 /*End Top Nav*/
 
@@ -90,6 +102,12 @@ a.menu-icon img {
   max-width: 340px;
   min-width: 340px;
   margin-top: 20px;
+}
+
+.card img {
+  min-height: 220px;
+  max-height: 220px;
+
 }
 /*End Room cards*/
 
@@ -101,11 +119,11 @@ a.menu-icon img {
   display: inline-block;
   font-size: 14px;
   margin: 2px 2px;
-  border-radius: 50%;
+  border-radius: 5px;
 }
 
 .HideBtnContainer {
-  margin-right: -10px;
+  /*margin-right: -10px;*/
   display: none;
 }
 
@@ -150,6 +168,62 @@ a.menu-icon img {
     margin-top: 20px;
   }
   .card img {
-    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
   }
 }
+
+
+
+
+
+/*Friends list*/
+#friends {
+  position: fixed; 
+  right: 15px; 
+  bottom: 15px;
+  display: -ms-inline-flexbox;
+  z-index: 1;
+}
+
+#Btn {
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px #888888;
+}
+
+.btn-group-vertical {
+  position: fixed; 
+  right: 15px; 
+  bottom: 15px;
+  display: -ms-inline-flexbox;
+  z-index: 1;
+}
+.dropdown-toggle{
+  border-radius: 40px;
+}
+.dropdown-menu{
+  min-width: 12em;
+  padding: 0;
+  box-shadow: 0px 0px 20px 0px #888888;
+}
+.btn-friendslist {
+width: 100%;
+/*background-color: #007bff;*/
+height: 45px;
+/*display: -webkit-box;*/
+
+}
+.btn-friendslist:hover {
+  background-color: lightgrey;
+}
+.friends-icon{
+  width: 20px;
+}
+.friends-title{
+  text-align: center;
+}
+/*End of Friendslist*/
+
+
+
+
